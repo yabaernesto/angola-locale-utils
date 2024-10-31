@@ -3,13 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx src/index.ts"
+    "dev": "tsx src/teste.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@types/node": "^22.8.6",
     "typescript": "^5.6.3"
   },
   "dependencies": {
