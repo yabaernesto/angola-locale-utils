@@ -24,28 +24,28 @@
 ```js
 import { angolaLocaleUtils } from 'angola-locale-utils'
 
-// example.ts
-import { angolaLocaleUtils } from './index';
+// Exemplos de valores
+const currencyValue = 9876543.21
+const dateValue = new Date(2024, 9, 31, 10, 15) // Data com dia, mês, hora e minutos
+const numberValue = 1234567.89
 
-const currencyValue = 9876543.21;
-const dateValue = new Date(); // Usando a data atual
-const numberValue = 1234567.89;
+// Usando a função formatCurrencyAOA para formatar moeda
+console.log(angolaLocaleUtils.formatCurrencyAOA(currencyValue, 'before')) // Saída: "Kz 9.876.543,21"
+console.log(angolaLocaleUtils.formatCurrencyAOA(currencyValue, 'after')) // Saída: "9.876.543,21 Kz"
 
-// Usando a função formatCurrencyAOA
-console.log(angolaLocaleUtils.formatCurrencyAOA(currencyValue, 'before')); // Saída: "Kz 9.876.543,21"
-console.log(angolaLocaleUtils.formatCurrencyAOA(currencyValue, 'after'));  // Saída: "9.876.543,21 Kz"
+// Usando a função formatDateAO para formatar datas
+console.log(angolaLocaleUtils.formatDateAO(dateValue)) // Saída: "31/10/2024"
+console.log(angolaLocaleUtils.formatDateAO(dateValue, 'MM/DD/YYYY')) // Saída: "10/31/2024"
+console.log(angolaLocaleUtils.formatDateAO(dateValue, 'YYYY-MM-DD')) // Saída: "2024-10-31"
+console.log(angolaLocaleUtils.formatDateAO(dateValue, 'extenso')) // Saída: "31 de outubro de 2024"
+console.log(angolaLocaleUtils.formatDateAO(dateValue, 'DD/MM/YYYY', true)) // Saída: "31/10/2024 10:15:00"
+console.log(angolaLocaleUtils.formatDateAO(dateValue, 'DD/MM/YYYY', true, true)) // Saída: "31/10/2024 10:15:00 AM/PM"
+console.log(
+  angolaLocaleUtils.formatDateAO(dateValue, 'DD/MM/YYYY', true, false, true)
+) // Saída: "31/10/2024 10:15:00"
 
-// Usando a função formatDateAO
-console.log(angolaLocaleUtils.formatDateAO(dateValue));                     // Saída: "DD/MM/YYYY"
-console.log(angolaLocaleUtils.formatDateAO(dateValue, 'MM/DD/YYYY'));      // Saída: "MM/DD/YYYY"
-console.log(angolaLocaleUtils.formatDateAO(dateValue, 'YYYY-MM-DD'));      // Saída: "YYYY-MM-DD"
-console.log(angolaLocaleUtils.formatDateAO(dateValue, 'extenso'));         // Saída: "31 de outubro de 2024"
-console.log(angolaLocaleUtils.formatDateAO(dateValue, 'DD/MM/YYYY', true)); // Saída: "31/10/2024 HH:mm"
-console.log(angolaLocaleUtils.formatDateAO(dateValue, 'DD/MM/YYYY', true, true)); // Saída: "31/10/2024 hh:mm AM/PM"
-console.log(angolaLocaleUtils.formatDateAO(dateValue, 'DD/MM/YYYY', true, false, true)); // Saída: "31/10/2024 HH:mm:ss"
-
-// Usando a função formatNumberAO
-console.log(angolaLocaleUtils.formatNumberAO(numberValue));                 // Saída: "1.234.567,89"
+// Usando a função formatNumberAO para formatar números
+console.log(angolaLocaleUtils.formatNumberAO(numberValue)) // Saída: "1.234.567,89"
 ```
 
 ## Benefícios da Biblioteca

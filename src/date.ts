@@ -2,31 +2,37 @@ function formatDateAO(
   date: Date,
   format = 'DD/MM/YYYY',
   includeTime = false,
-  use12HourFormat = false,
-  includeSeconds = false
+  use12HourFormat = false
 ): string {
-  const options: Intl.DateTimeFormatOptions = {
+  const dateOptions: Intl.DateTimeFormatOptions = {
     day: '2-digit',
     month: '2-digit',
     year: 'numeric',
   }
 
-  let formattedDate = new Intl.DateTimeFormat('pt-AO', options).format(date)
+  let formattedDate = new Intl.DateTimeFormat('pt-BR', dateOptions).format(date)
 
   if (includeTime) {
+    const dateWithZeroSeconds = new Date(
+      date.getFullYear(),
+      date.getMonth(),
+      date.getDate(),
+      date.getHours(),
+      date.getMinutes(),
+      0
+    )
+
     const timeOptions: Intl.DateTimeFormatOptions = {
       hour: '2-digit',
       minute: '2-digit',
+      second: '2-digit',
       hour12: use12HourFormat,
     }
 
-    if (includeSeconds) {
-      timeOptions.second = '2-digit'
-    }
-
-    const formattedTime = new Intl.DateTimeFormat('pt-AO', timeOptions).format(
-      date
+    const formattedTime = new Intl.DateTimeFormat('pt-BR', timeOptions).format(
+      dateWithZeroSeconds
     )
+
     formattedDate += ` ${formattedTime}`
   }
 
