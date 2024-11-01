@@ -13,7 +13,6 @@ function formatDateAO(
 
   let formattedDate = new Intl.DateTimeFormat('pt-AO', options).format(date)
 
-  // Adicionando a hora se includeTime for true
   if (includeTime) {
     const timeOptions: Intl.DateTimeFormatOptions = {
       hour: '2-digit',
@@ -22,7 +21,7 @@ function formatDateAO(
     }
 
     if (includeSeconds) {
-      timeOptions.second = '2-digit' // Inclui segundos
+      timeOptions.second = '2-digit'
     }
 
     const formattedTime = new Intl.DateTimeFormat('pt-AO', timeOptions).format(
@@ -31,7 +30,6 @@ function formatDateAO(
     formattedDate += ` ${formattedTime}`
   }
 
-  // Formatação baseada na opção de formato
   switch (format) {
     case 'MM/DD/YYYY':
       return formattedDate.split('/').reverse().join('/')
