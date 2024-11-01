@@ -6,13 +6,19 @@
     "build": "tsc",
     "dev": "tsx src/index.ts"
   },
-  "keywords": ["Angola", "lib", "biblioteca", "AOA", "kz"],
+  "keywords": [
+    "Angola",
+    "lib",
+    "biblioteca",
+    "AOA",
+    "kz"
+  ],
   "author": "Yaba Ernesto",
   "license": "ISC",
   "description": "Uma solução focada na formatação de números “moedas” e datas para a localidade angolana (pt-AO)",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yabaernesto/angola-locale-utils.git"
+    "url": "git+https://github.com/yabaernesto/angola-locale-utils.git"
   },
   "bugs": {
     "url": "https://github.com/yabaernesto/angola-locale-utils/issues"
