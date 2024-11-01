@@ -49,7 +49,9 @@ console.log(angolaLocaleUtils.formatNumberAO(numberValue)) // Saída: "1.234.567
 ```
 
 ## Como usar?
-
+```bash
+npm i angola-locale-utils
+```
 
 ## Benefícios da Biblioteca
 - Facilidade de Uso: Funções prontas para uso direto em JavaScript, sem necessidade de configurações extras.
