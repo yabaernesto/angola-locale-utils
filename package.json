@@ -1,18 +1,12 @@
 {
   "name": "angola-locale-utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/index.ts"
   },
-  "keywords": [
-    "Angola",
-    "lib",
-    "biblioteca",
-    "AOA",
-    "kz"
-  ],
+  "keywords": ["Angola", "lib", "biblioteca", "AOA", "kz"],
   "author": "Yaba Ernesto",
   "license": "ISC",
   "description": "Uma solução focada na formatação de números “moedas” e datas para a localidade angolana (pt-AO)",
