@@ -55,3 +55,5 @@ console.log(angolaLocaleUtils.formatNumberAO(numberValue)) // Saída: "1.234.567
 
 ### Nota:
 Esta biblioteca foi feita para cobrir uma necessidade essencial para o mercado angolano, trazendo padronização para dados locais e facilitando o trabalho de desenvolvedores que precisam lidar com formatos de exibição específicos do país, Angola.
+
+## Intalação

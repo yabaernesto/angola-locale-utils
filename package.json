@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "tsx src/teste.ts"
+    "dev": "tsx src/index.ts"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["Angola", "lib", "biblioteca", "api"],
+  "author": "Yaba Ernesto",
   "license": "ISC",
   "description": "",
   "devDependencies": {
