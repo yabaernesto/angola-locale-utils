@@ -5,10 +5,10 @@
   "scripts": {
     "dev": "tsx src/index.ts"
   },
-  "keywords": ["Angola", "lib", "biblioteca", "api"],
+  "keywords": ["Angola", "lib", "biblioteca", "AOA", "kz"],
   "author": "Yaba Ernesto",
   "license": "ISC",
-  "description": "",
+  "description": "Uma solução focada na formatação de números “moedas” e datas para a localidade angolana (pt-AO)",
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/node": "^22.8.6",
