@@ -1,4 +1,4 @@
-function formatNumberAO(value: number, decimalPlaces: number = 2): string {
+function formatNumberAO(value: number, decimalPlaces = 2): string {
   const roundedValue = value.toFixed(decimalPlaces)
   const [integerPart, decimalPart] = roundedValue.split('.')
 
