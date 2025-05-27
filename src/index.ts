@@ -1,9 +1,9 @@
-import { formatNumberAO } from './number'
-import { formatCurrencyAOA } from './currency'
-import { formatDateAO } from './date'
+import { formatNumber } from './number'
+import { formatCurrency } from './currency'
+import { formatDate } from './date'
 
-export const angolaLocaleUtils = {
-  formatNumberAO,
-  formatCurrencyAOA,
-  formatDateAO,
+export const locale = {
+  formatNumber,
+  formatCurrency,
+  formatDate,
 }
