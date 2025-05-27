@@ -1,8 +1,12 @@
 type CurrencyPosition = 'before' | 'after'
 
-function formatCurrencyAOA(
+interface formatCurrencyAOAProps {
   amount: number,
-  position: CurrencyPosition = 'before'
+  position: CurrencyPosition
+}
+
+export function formatCurrencyAOA(
+  { amount, position = 'before' }: formatCurrencyAOAProps
 ): string {
   const formatter = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
@@ -17,5 +21,3 @@ function formatCurrencyAOA(
     ? `Kz ${formattedAmount.replace('Kz', '').trim()}`
     : `${formattedAmount.replace('Kz', '').trim()} Kz`
 }
-
-export { formatCurrencyAOA }
