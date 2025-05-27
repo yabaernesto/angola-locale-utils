@@ -1,4 +1,11 @@
-function formatNumberAO(value: number, decimalPlaces = 2): string {
+interface formatNumberProps {
+  value: number
+  decimalPlaces: number
+}
+
+export function formatNumber({
+  value, decimalPlaces = 2
+}: formatNumberProps): string {
   const roundedValue = value.toFixed(decimalPlaces)
   const [integerPart, decimalPart] = roundedValue.split('.')
 
@@ -8,5 +15,3 @@ function formatNumberAO(value: number, decimalPlaces = 2): string {
     ? `${formattedIntegerPart},${decimalPart}`
     : formattedIntegerPart
 }
-
-export { formatNumberAO }

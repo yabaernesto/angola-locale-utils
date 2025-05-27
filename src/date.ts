@@ -1,8 +1,17 @@
-function formatDateAO(
+interface formatDateProps {
   date: Date,
-  format = 'DD/MM/YYYY',
-  includeTime = false,
-  use12HourFormat = false
+  format: string,
+  includeTime: boolean,
+  use12HourFormat: boolean
+}
+
+export function formatDate(
+  {
+    date,
+    format = 'DD/MM/YYYY',
+    includeTime = false,
+    use12HourFormat = false
+  }: formatDateProps
 ): string {
   const dateOptions: Intl.DateTimeFormatOptions = {
     day: '2-digit',
@@ -100,5 +109,3 @@ function formatDateAO(
       return formattedDate
   }
 }
-
-export { formatDateAO }

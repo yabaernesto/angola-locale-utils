@@ -1,12 +1,12 @@
 type CurrencyPosition = 'before' | 'after'
 
-interface formatCurrencyAOAProps {
+interface formatCurrencyAProps {
   amount: number,
   position: CurrencyPosition
 }
 
-export function formatCurrencyAOA(
-  { amount, position = 'before' }: formatCurrencyAOAProps
+export function formatCurrency(
+  { amount, position = 'before' }: formatCurrencyAProps
 ): string {
   const formatter = new Intl.NumberFormat('pt-BR', {
     style: 'currency',
