@@ -1,7 +1,10 @@
 {
-  "name": "locale-utils-ao",
+  "name": "angola-locale-utils",
   "version": "1.0.0",
   "main": "./src/index.ts",
+  "files": [
+    "build"
+  ],
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/index.ts"
