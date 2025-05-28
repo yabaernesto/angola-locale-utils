@@ -1,6 +1,6 @@
 {
   "name": "angola-locale-utils",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "./src/index.ts",
   "files": [
     "build"
