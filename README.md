@@ -60,7 +60,7 @@ console.log(locale.formatNumber(numberValue))
 
 ## Como usar?
 ```bash
-npm i locale-utils-ao
+npm i angola-locale-utils
 ```
 
 ## Benefícios da Biblioteca
