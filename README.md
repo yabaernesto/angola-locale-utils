@@ -25,7 +25,7 @@
 
 ### Exemplo de uso
 ```js
-import { locale } from 'locale-utils-ao'
+import { locale } from 'angola-locale-utils'
 
 // Exemplos de valores
 const currencyValue = 9876543.21
